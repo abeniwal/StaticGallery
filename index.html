@@ -9,7 +9,7 @@
 
     <link href="css/main.css" rel="stylesheet">
     <link href="css/lightbox.css" rel="stylesheet">
-    <link href='//fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
 
     <title>Bhavika + Anil</title>
   </head>
@@ -23,7 +23,7 @@
     </header>
 
     <div id="gallery">
-      <a ng-repeat="photo in gallery.photos" href="images/med-res/{{photo}}" data-lightbox="gallery" data-title="<a href='images/high-res/{{photo}}' target='_blank' style='color:#ffffff'>Click here for the high-res file</a>"><img class="thumb" ng-src="images/thumbnails/{{photo}}"></a>
+      <a ng-repeat="photo in gallery.photos" href="images/med-res/{{photo.filename}}" data-lightbox="gallery" data-title="<a href='images/high-res/{{photo.filename}}' target='_blank' style='color:#ffffff'>Click here for the high-res file</a>"><img ng-src="images/thumbnails/{{photo.filename}}" class="thumb {{photo.orientation}}"></a>
     </div>
     <div id="footer">
       <a href="#">Back to the top</a>
@@ -31,8 +31,8 @@
       Copyright 2014. All Rights Reserved</p>
     </div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="js/lightbox.min.js"></script>
     <script src="js/images.js"></script>
     <script src="js/gallery.js"></script>
