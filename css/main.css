@@ -1,0 +1,126 @@
+/******************************
+Body Styling
+*******************************/
+body {
+  font-family: Helvetica;
+  background-color: #2a2a2a;
+  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  margin: 0;
+  height: 100vh;
+}
+
+#footer {
+  text-align: center;
+  padding: 30px 0 30px 0;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+#footer a {
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/******************************
+Navbar Layout
+*******************************/
+.header, .nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  justify-content: space-between;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+.nav {
+  flex: 1;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav li {
+  margin: 12px 0 12px 28px;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.nav li a:hover {
+  color: rgba(255,255,255,0.7);
+}
+
+.firstnames {
+  font-family: 'Pinyon Script', cursive;
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+  line-height: 50%;
+}
+
+.lastname {
+  font-family: 'Helvetica';
+  font-weight: normal;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-left: 12px;
+  letter-spacing: 20px;
+  text-align: center;
+}
+
+@media all and (min-width: 640px) {
+  .header, .nav {
+    flex-direction: row;
+  }
+}
+
+@media all and (min-width: 1030px) {
+  .nav {
+    flex: none;
+  }
+}
+
+@media all and (min-width: 1030px) {
+  .header {
+    width: 1030px;
+    min-width: 768px;
+  }
+}
+
+
+/******************************
+Gallery Styling
+*******************************/
+#gallery {
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+#gallery a {
+  transition: .8s opacity;
+  border: 0;
+}
+
+#gallery:hover a {
+  opacity: 0.6;
+}
+
+#gallery:hover a:hover {
+  opacity: 1;
+}
+
+.thumb {
+  max-height: 200px;
+  padding: 5px;
+}

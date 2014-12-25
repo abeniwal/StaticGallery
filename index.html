@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="gallery">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pictures from the wedding of Bhavika Acharya and Anil Beniwal">
+    <meta name="author" content="Anil Beniwal">
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
+
+    <title>Bhavika + Anil</title>
+  </head>
+
+  <body ng-controller="galleryController as gallery" ng-init="gallery.loadPhotos();">
+    <header class="header">
+      <h1 class="firstnames">Bhavika + Anil<br><span class="lastname">Beniwal</span></h1>
+      <ul class="nav">
+        <li ng-repeat="category in gallery.categories" ng-click="gallery.loadPhotos(category);"><a href="#" ng-bind="category"></a></li>
+      </ul>
+    </header>
+
+    <div id="gallery">
+      <a ng-repeat="photo in gallery.photos" href="images/med-res/{{photo}}" data-lightbox="gallery" data-title="<a href='images/high-res/{{photo}}' target='_blank' style='color:#ffffff'>Click here for the high-res file</a>"><img class="thumb" ng-src="images/thumbnails/{{photo}}"></a>
+    </div>
+    <div id="footer">
+      <a href="#">Back to the top</a>
+      <p>All images taken by <a href="http://www.wayneandangela.com/">Wayne + Angela</a>. Gallery built by <a href="mailto:anil@beniwal.com">Anil Beniwal</a>.<br>
+      Copyright 2014. All Rights Reserved</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/images.js"></script>
+    <script src="js/gallery.js"></script>
+
+  </body>
+</html>
