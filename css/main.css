@@ -155,14 +155,5 @@ Gallery Styling
 
 .thumb {
   padding: 5px;
-}
-
-.landscape {
   height: 200px;
-  width: 300px;
-}
-
-.portrait {
-  height: 200px;
-  width: 133px;
 }
