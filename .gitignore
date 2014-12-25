@@ -218,3 +218,4 @@ pip-log.txt
 images/high-res/*.jpg
 images/med-res/*.jpg
 images/thumbnails/*.jpg
+node_modules/*
