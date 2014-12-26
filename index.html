@@ -18,7 +18,7 @@
     <header class="header">
       <h1 class="firstnames">Bhavika + Anil<br><span class="lastname">Beniwal</span></h1>
       <ul class="nav">
-        <li ng-repeat="category in gallery.categories" ng-click="gallery.loadPhotos(category);"><a href="#" ng-bind="category"></a></li>
+        <li ng-repeat="category in gallery.categories"><a ng-click="gallery.loadPhotos(category);" href="javascript:void(0)" ng-bind="category"></a></li>
       </ul>
     </header>
 
@@ -27,7 +27,7 @@
     </div>
     <div id="footer">
       <a href="#">Back to the top</a>
-      <p>All images taken by <a href="http://www.wayneandangela.com/">Wayne + Angela</a>. Gallery built by <a href="mailto:anil@beniwal.com">Anil Beniwal</a>.<br>
+      <p>Photos by <a href="http://www.wayneandangela.com/">Wayne + Angela</a>. Gallery built by <a href="mailto:anil@beniwal.com">Anil Beniwal</a>.<br>
       Copyright 2014. All Rights Reserved</p>
     </div>
 
