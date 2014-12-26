@@ -288,10 +288,10 @@
 			            "orientation": "portrait",
 			            "filename": "ABB-0071.jpg"
 			        },
-			        {
+/*			        {
 			            "orientation": "landscape",
 			            "filename": "ABB-0072.jpg"
-			        },
+			        },*/
 			        {
 			            "orientation": "portrait",
 			            "filename": "ABB-0073.jpg"
@@ -372,10 +372,10 @@
 			            "orientation": "portrait",
 			            "filename": "ABB-0092.jpg"
 			        },
-			        {
+			        /*{
 			            "orientation": "portrait",
 			            "filename": "ABB-0093.jpg"
-			        },
+			        },*/
 			        {
 			            "orientation": "portrait",
 			            "filename": "ABB-0094.jpg"
@@ -3232,10 +3232,10 @@
 			            "orientation": "landscape",
 			            "filename": "ABB-0804.jpg"
 			        },
-			        {
+			        /*{
 			            "orientation": "landscape",
 			            "filename": "ABB-0805.jpg"
-			        },
+			        },*/
 			        {
 			            "orientation": "landscape",
 			            "filename": "ABB-0806.jpg"
@@ -3244,26 +3244,26 @@
 			            "orientation": "landscape",
 			            "filename": "ABB-0807.jpg"
 			        },
-			        {
+			        /*{
 			            "orientation": "portrait",
 			            "filename": "ABB-0808.jpg"
-			        },
+			        },*/
 			        {
 			            "orientation": "landscape",
 			            "filename": "ABB-0809.jpg"
 			        },
-			        {
+			        /*{
 			            "orientation": "landscape",
 			            "filename": "ABB-0810.jpg"
-			        },
+			        },*/
 			        {
 			            "orientation": "landscape",
 			            "filename": "ABB-0811.jpg"
 			        },
-			        {
+			        /*{
 			            "orientation": "landscape",
 			            "filename": "ABB-0812.jpg"
-			        },
+			        },*/
 			        {
 			            "orientation": "landscape",
 			            "filename": "ABB-0813.jpg"
